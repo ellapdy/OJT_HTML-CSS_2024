@@ -396,20 +396,25 @@
 /*Call to Action*/
 .cta{
   background-color: var(--clr-primary);
-  padding: 2rem;
+  padding: 4rem 0;
 }
 .cta .cta__title h2{
   color: var(--clr-light);
+  margin-bottom: .2rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
 .cta .cta__wrapper p{
   color: var(--clr-light);
-  padding: 2rem;
+  padding: 1rem;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 .cta .cta__wrapper{
   color: var(--clr-light);
-  text-align:center;  
+  text-align: center;
+  padding: .5rem;
 }
 /*Footer*/
 .footer{
@@ -646,102 +651,93 @@
   padding-bottom: 5rem;
 }
 .updateBanner .updateBanner__wrapper{
-  justify-content:center;
-  align-items: center;
-  gap: 5rem;
   display: flex;
-  /* max-width: 80rem; */
-  padding: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+.updateBanner .updateBanner__left{
+  padding: 2rem;
+  max-width: 75rem;
 }
 .updateBanner .updateBanner__left .updateBanner__title h2{
   color: var(--clr-primary);
   font-size: 6rem;
   font-weight: 700;
   padding: 2rem;
+  text-align: center;
 }
 .updateBanner .updateBanner__wrapper .updateBanner__left p{
   margin-bottom: 2rem;
   text-align: justify;
   max-width: 60rem;
-  align-items: center;
 }
-.updateBanner .updateBanner__right image{
+.updateBanner .updateBanner__right img{
   position: relative;
+  top: 7rem;
   width: 46.5;
 }
-/* .updateBanner .updateBanner__wrapper .updateBanner__right{
-  width: 300rem;
-  justify-content: space-between;
-} */
 /* UPDATES DESIGNS */
 .updateDesigns{
   background-color: var(--clr-light);
 }
-.updateDesigns .updateDesigns__wrapper .updateDesigns__card .updateDesigns__title h3{
-  color: var(--clr-secondary);
-  font-size: 4rem;
-  font-weight: 600;
-  padding: 2rem;
-}
 .updateDesigns .updateDesigns__wrapper{
   display: grid;
   grid-template-columns: 30rem 30rem;
-  gap: 2rem;
-}
-.updateDesigns .updateDesigns__wrapper h3{
-  color: var(--clr-secondary);
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+  gap: 1rem;
 }
 .updateDesigns .updateDesigns__wrapper .updateDesigns__card{
   max-width: 30rem;
   background-color: var(--clr-semilight);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-bottom: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
-.updateDesigns .updateDesigns__wrapper .updateDesigns__card .updateDesigns__title h3{
+.updateDesigns .updateDesigns__wrapper .updateDesigns__card h3{
   color: var(--clr-dark);
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
+  text-align: center;
+  /* color: var(--clr-secondary);
+  font-size: 4rem;
+  font-weight: 600;
+  padding: 2rem; */
 }
-.updateDesigns .updateDesigns__wrapper .updateDesigns__card .updateDesigns__details p{
+.updateDesigns .updateDesigns__wrapper .updateDesigns__card p{
   color: var(--clr-dark);
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 1rem;
   text-align: left;
 }
-.updateDesigns .updateDesigns__wrapper .updateDesigns__icon li a{
+.updateDesigns .updateDesigns__left .updateDesigns__wrapper .updateDesigns__card a{
   color: var(--clr-dark);
-  justify-content: flex-end;
+  font-size: 3rem;
 }
-.updateDesigns p{
-  color: var(--clr-dark);
-  font-size: 1.5rem;
+.updateDesigns .updateDesigns__right h3{
+  color: var(--clr-secondary);
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
-  padding: .5rem;
+  margin-bottom: 3rem;
 }
-.updateDesigns .updateDesigns__right{
-  align-content: flex-start;
+.updateDesigns .updateDesigns__left h3{
+  color: var(--clr-secondary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.updateDesigns .updateDesigns__content{
+  display: flex;
+  gap: 1rem;
 }
 .updateDesigns .updateDesigns__right table{
   color: var(--clr-dark);
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 800;
   margin-bottom: 1rem;
-}
-.updateDesigns .updateDesigns__content{
-  display: flex;
-  gap: 3rem;
-}
-.updateDesigns .updateDesigns__content .updateDesigns__title h3{
-  color: var(--clr-secondary);
-  font-size: 2.5rem;
-  font-weight: 700;
-  padding-bottom: 2rem;
 }
 
 /* RECENT */
@@ -769,4 +765,66 @@
   color: var(--clr-dark);
   font-size: 1.5rem;
   font-weight: 700;
+}
+.recent .recent__img .recent__details{
+  display: flex;
+  justify-content: space-between;
+}
+.recent .recent__img .recent__details .recent__content{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* CONTACT */
+.contact{
+  background-color: var(--clr-light);
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+  height: 100vh;
+}
+.contact .contact__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.contact .contact__right{
+  background-color: var(--clr-dark);
+  display: flex;
+  flex-direction: column;
+  width: 45rem;
+  padding: 5rem 5rem;
+}
+.contact h3{
+  color: var(--clr-light);
+  font-size: 3rem;
+  font-weight: 700rem;
+  margin-bottom: 2rem;
+}
+.contact a{
+  color: var(--clr-secondary);
+  font-size: 3rem;
+}
+.contact p{
+  color: var(--clr-light);
+  font-size: 2rem;
+}
+.contact .info__contact{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.contact h1{
+  color: var(--clr-primary);
+  font-size: 8rem;
+  font-weight: 900rem;
+}
+.contact .contact__title p{
+  color: var(--clr-dark);
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.contact form{
+  color: var(--clr-dark);
 }
