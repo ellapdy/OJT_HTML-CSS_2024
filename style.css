@@ -646,28 +646,33 @@
   padding-bottom: 5rem;
 }
 .updateBanner .updateBanner__wrapper{
-  /* justify-content:center; */
+  justify-content:center;
   align-items: center;
   gap: 5rem;
   display: flex;
-  max-width: 90rem;
+  /* max-width: 80rem; */
+  padding: 4rem;
 }
 .updateBanner .updateBanner__left .updateBanner__title h2{
   color: var(--clr-primary);
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 700;
   padding: 2rem;
 }
-.updateBanner .updateBanner__wrapper .update__left p{
+.updateBanner .updateBanner__wrapper .updateBanner__left p{
   margin-bottom: 2rem;
   text-align: justify;
   max-width: 60rem;
+  align-items: center;
 }
 .updateBanner .updateBanner__right image{
   position: relative;
   width: 46.5;
 }
-
+/* .updateBanner .updateBanner__wrapper .updateBanner__right{
+  width: 300rem;
+  justify-content: space-between;
+} */
 /* UPDATES DESIGNS */
 .updateDesigns{
   background-color: var(--clr-light);
@@ -683,7 +688,7 @@
   grid-template-columns: 30rem 30rem;
   gap: 2rem;
 }
-.updateDesigns h3{
+.updateDesigns .updateDesigns__wrapper h3{
   color: var(--clr-secondary);
   font-size: 2.5rem;
   font-weight: 700;
@@ -719,6 +724,49 @@
   margin-bottom: 1rem;
   padding: .5rem;
 }
-.updateDesigns .updateDesigns__wrapper .updateDesigns__right{
+.updateDesigns .updateDesigns__right{
+  align-content: flex-start;
+}
+.updateDesigns .updateDesigns__right table{
+  color: var(--clr-dark);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.updateDesigns .updateDesigns__content{
   display: flex;
+  gap: 3rem;
+}
+.updateDesigns .updateDesigns__content .updateDesigns__title h3{
+  color: var(--clr-secondary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+
+/* RECENT */
+.recent{
+  background-color: var(--clr-light);
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+.recent .recent__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.recent h3{
+  color: var(--clr-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.recent .recent__img .recent__icon{
+  display: flex;
+}
+.recent .recent__img p{
+  color: var(--clr-dark);
+  font-size: 1.5rem;
+  font-weight: 700;
 }
